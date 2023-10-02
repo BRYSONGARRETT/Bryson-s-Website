@@ -1,0 +1,68 @@
+body {
+    background-color:#dfd6bf;
+    font-family: 'Young Serif', serif;
+    font-size: 16 px; /*Sets the font size to 16px */
+    font-weight: 300; /* Sets the font weight to 300 */
+    line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+    color: #231F20
+}
+
+h1, h2, h3, h4 {
+    line-height: 1.4;
+}
+h1 {
+    font-size: 1.75em;
+    font-weight: 400;
+}
+h2 {
+    font-size: 1.75em;
+    font-weight: 400;
+}
+h3 {
+    font-size: 1.75em;
+    font-weight: 400;
+}
+h4 {
+    font-size: 1.75em;
+    font-weight: 400;
+}
+
+a  {
+    color: #ff7f50;
+    text-decoration: none; /* no underlining */
+}
+a:hover {
+    color:#cc6540;
+    text-decoration: underline; /* underlining when hovering over a link */
+}
+a:visited { /* visted link */
+  color: #ff7f50;
+}
+a:active { /* selected link */
+  color: #994c30
+}
+.primary-button {
+    background-color: green;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+}
+.secondary-button {
+    background-color: green;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+}
+img {
+    width: 100%;
+}
+#about {
+    background-color: black;
+    color: white;
+}
+#work {
+    background-color: darkgray;
+}
+#contact {
+    background-color: lightgray;
+}
