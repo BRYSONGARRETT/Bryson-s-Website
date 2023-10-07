@@ -12,61 +12,80 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+    </style>
 </head>
+
 <body>
-    <img src="https://via.placeholder.com/150x50?text=Logo" alt="Logo">
     <header>
-        <div>
-            <a href="#" id="logo">Your Logo </a>
+        <div class="container">
+            <a href="#" id="logo"><img src="https://via.placeholder.com/150x50?text=Logo" alt="Logo" /> </a>
+            <nav>
+                <ul class="navigation">
+                    <li>
+                        <a href="index.html">Work</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <a href="index.html">Work</a>
-            <a href="/about.html">About</a>
-            <a href="#contact">Contact</a>
-        </nav>
     </header>
     <main>
         <div>
-            <div>
-                <h1>
-                    Hi, I'm Bryson
-                    <span>
-                        Designing Digital Delight: Bryson's UI Portfolio
-                    </span>
-                </h1>
+            <div id="hero">
+                <div class="container">
+                    <h1>
+                        Hi, I'm Bryson
+                        <span>
+                            Designing Digital Delight: Bryson's UI Portfolio
+                        </span>
+                    </h1>
+                </div>
                 <a href="files/bryson-garrett-resume.pdf">View my resume</a>
             </div>
             <div>
-                <div>
-                    <div>
+                <div class="hero">
+                    <div class="container">
                         <h2>My Portfolio</h2>
-                        <div>
-                            <picture>
-                                <source srcset="img/captaincook-image-small-1.jpg" media="(max-width:767px)">
-                                <img src="img/captaincook-image-large-1.jpg" alt="The cover image for a shaving oil
-                            bottle app for men called Slicks Shaving Oil">
-                            </picture>
+                        <div class="row">
+                            <div class="column">
+                                <picture>
+                                    <source srcset="img/captaincook-image-small-1.jpg" media="(max-width:767px)">
+                                    <img src="img/captaincook-image-large-1.jpg" alt="The cover image for a shaving oil
+                                bottle app for men called Slicks Shaving Oil">
+                                </picture>
+                            </div>
+                            <div class="column">
+                                <button class="primary-button">Read More</button>
+                                <h3>Captain Cook</h3>
+                                <p>
+                                    Introducing our cutting-edge Captain cook recipe app,
+                                    a culinary companion that brings the joy of cooking to your fingertips.
+                                    Explore a vast library of mouthwatering recipes, streamline your grocery
+                                    shopping with built-in lists, and cook with confidence using step-by-step
+                                    instructions,
+                                    making every meal a culinary masterpiece."
+                                </p>
+                                <p>
+                                    Having quick access to a recipe app is a motivator to cook a nice meal for people
+                                    who
+                                    dont have a lot of time.
+                                    This is geared to anyone needing many quick yummy recipe options.
+                                    Features on this site are something that users will use daily.
+                                </p>
+                                <a href="/captaincook.html">View project</a>
+                            </div>
                         </div>
-                        <div>
-                            <button class="primary-button">Read More</button>
-                            <h3>Captain Cook</h3>
-                            <p>
-                                Introducing our cutting-edge Captain cook recipe app,
-                                a culinary companion that brings the joy of cooking to your fingertips.
-                                Explore a vast library of mouthwatering recipes, streamline your grocery
-                                shopping with built-in lists, and cook with confidence using step-by-step instructions,
-                                making every meal a culinary masterpiece."
-                            </p>
-                            <p>
-                                Having quick access to a recipe app is a motivator to cook a nice meal for people who
-                                dont have a lot of time.
-                                This is geared to anyone needing many quick yummy recipe options.
-                                Features on this site are something that users will use daily.
-                            </p>
-                            <a href="/captaincook.html">View project</a>
-                        </div>
-                        <div>
-                            <div>
+                        <div class="row">
+                            <div class="column">
                                 <picture>
                                     <source srcset="img/captaincook-image-small-2.jpg" media="(max-width:767px)">
                                 </picture>
@@ -74,7 +93,7 @@
                                 Sourdough Bakery called Daily Starter. ">
                                 </picture>
                             </div>
-                            <div>
+                            <div class="column">
                                 <h3>Shaving Oil</h3>
                                 <p>
                                     Shaving Oil is intended to replace traditional shaving creams, gels or soaps.
@@ -83,16 +102,12 @@
                                 </p>
                             </div>
                         </div>
-                        <div>
-                            <div title="column img">
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
     </main>
-    <footer id="contact">
-        <div>
+    <footer>
+        <div class="container">
             <h2>Get In Touch</h2>
             <p>
                 What feedback do you have??? Contact me at bryson.garrett@gmail.com
