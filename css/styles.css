@@ -83,18 +83,6 @@ img {
     width: 100%;
 }
 
-#about {
-    background-color: black;
-    color: white;
-}
-
-#work {
-    background-color: darkgray;
-}
-
-#contact {
-    background-color: lightgray;
-}
 
 /* Layout styling */
 .container {
@@ -184,6 +172,9 @@ main {
     display: inline-block;
     width: 100%
 }
+#logo {
+    width: 100px;
+}
 
 /* ==============================
 Medium devices (640px and larger)
@@ -203,6 +194,14 @@ Medium devices (640px and larger)
         font-weight: 400;
         line-height: 1.6;
         background-color: blue;
+    }
+    .col-md-6-mx-auto {
+        width: 50%;
+    }
+    
+    [class*="col-"] {
+        float: left;
+        padding: 10px;
     }
 }
 
@@ -225,6 +224,17 @@ Large devices (1024px or larger)
         background-color: #00ffbf;
 
     }
+
+    .col-lg-7 {
+        width: 60%;
+    }
+    .col-lg-5 {
+        width: 40%;
+    }
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
 }
 
 /* ==============================
@@ -271,15 +281,6 @@ nav ul li {
 
 #hero span {
     display: block;
-}
-
-.col-md-6 {
-    width: 50%;
-}
-
-[class*="col-"] {
-    float: left;
-    padding: 10px;
 }
 
 .row::after {
@@ -337,9 +338,9 @@ svg {
     from {
         stroke-dashoffset: 1000;
     }
-}
-to {
-    stroke-dashoffset: 0;
+    to {
+        stroke-dashoffset: 0;
+    }
 }
 
 .mypath {
@@ -349,7 +350,15 @@ to {
     animation-direction: alternate;
     animation-timing-function: linear;
 }
-@mypath moon-move {
+
+.moon {
+    animation-duration: 4s;
+    animation-name: moon-move;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+@keyframes moon-move {
     0% {
         transform: translateaX(0);
     }
