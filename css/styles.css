@@ -195,7 +195,7 @@ Medium devices (640px and larger)
         line-height: 1.6;
         background-color: blue;
     }
-    .col-md-6-mx-auto {
+    .col-md-6 {
         width: 50%;
     }
     
