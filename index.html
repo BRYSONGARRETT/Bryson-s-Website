@@ -12,27 +12,38 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/c09b59bdc3.js"
+        crossorigin="anonymous"> <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li></script>
+    <title>Your Page Title</title>
 
 </head>
 
 <body>
     <header>
         <div class="container">
-            <a href="#"> <img id="logo" src="https://via.placeholder.com/150x50?text=Logo" alt="Logo"> </a>
-            <nav>
-                <ul class="navigation">
-                    <li>
-                        <a href="index.html">Work</a>
-                    </li>
-                    <li>
-                        <a href="about.html">About</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+            <div class="navtoggle" id="myNavtoggle">
+                <a href="#"> <img id="logo" src="https://via.placeholder.com/150x50?text=Logo" alt="Logo"> </a>
+                <nav>
+                    <ul class="navigation">
+                        <li>
+                            <a href="index.html">Work</a>
+                        </li>
+                        <li>
+                            <a href="about.html">About</a>
+                        </li>
+                        <li>
+                            <a onclick="menuToggle()" href="contact.html ">Contact</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);" class="icon" onclick="menuToggle()">
+                                <i class="fas fa-bars"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
     <main>
@@ -619,6 +630,8 @@
             <p>copyright Bryson Garrett 2023-2024</p>
         </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
 </body>
 

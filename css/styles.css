@@ -106,14 +106,7 @@ img {
 }
 
 .logo {
-    max-width: 250px;
-}
-
-header {
-    background-color: #ffe4c4;
-    text-align: center;
-    padding: 10px;
-    margin: 10px;
+    max-width: 150px;
 }
 
 * {
@@ -121,20 +114,14 @@ header {
 }
 
 nav {
-    background-color: #ffe4c4;
-    color: white;
-    padding: 10px
+    display: inline-block;
+    width: 100%;
 }
 
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 10px;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
 }
 
 #hero {
@@ -151,8 +138,8 @@ nav ul li {
     text-align: center;
     /* Centers text/*
 }
-.css-box-shadow{
-	/*start ------------*/
+/* .css-box-shadow{
+	start ------------ */
     width: [object Object]px;
     height: [object Object]px;
     background: #F8F8F8;
@@ -163,7 +150,7 @@ nav ul li {
 }
 
 main {
-    padding-top: 133px;
+    padding-top: 56px;
 }
 
 #footer {
@@ -172,6 +159,7 @@ main {
     display: inline-block;
     width: 100%
 }
+
 #logo {
     width: 100px;
 }
@@ -183,9 +171,24 @@ Medium devices (640px and larger)
 @media only screen and (min-width: 640px) {
     header {
         background-color: #ffe4c4;
-        text-align: center;
-        padding: 10px;
+        padding: 10px 0 4px;
         margin: 10px;
+
+        nav>ul>li {
+            display: inline-block;
+        }
+
+        .navtoggle li:not(:last-child) {
+            display: inline-block;
+        }
+
+        .navtoggle li:last-child {
+            display: none;
+        }
+
+        nav>ul {
+            margin: 1em 0;
+        }
     }
 
     body {
@@ -195,15 +198,21 @@ Medium devices (640px and larger)
         line-height: 1.6;
         background-color: blue;
     }
+
     .col-md-6 {
         width: 50%;
     }
-    
+
     [class*="col-"] {
         float: left;
         padding: 10px;
     }
+
+    logo {
+        max-width: 250px;
+    }
 }
+
 
 /* ==============================
 Large devices (1024px or larger)
@@ -211,9 +220,16 @@ Large devices (1024px or larger)
 @media only screen and (min-width: 1024px) {
     header {
         background-color: #ffe4c4;
-        text-align: center;
-        padding: 10px;
+        padding: 10px 0 4px;
         margin: 10px;
+
+        nav>ul>li {
+            display: inline-block;
+        }
+
+        nav>ul {
+            margin: 1em 0;
+        }
     }
 
     body {
@@ -228,13 +244,15 @@ Large devices (1024px or larger)
     .col-lg-7 {
         width: 60%;
     }
+
     .col-lg-5 {
         width: 40%;
     }
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
 }
 
 /* ==============================
@@ -243,9 +261,23 @@ X-large devices (1440px or larger)
 @media only screen and (min-width: 1440px) {
     header {
         background-color: #ffe4c4;
-        text-align: center;
-        padding: 10px;
+        padding: 10px 0 4px;
         margin: 10px;
+
+        nav>ul>li {
+            display: inline-block;
+        }
+
+        nav>ul {
+            margin: 1em 0;
+        }
+
+        .navtoggle li:not(:last-child) {
+            display: inline-block;
+        }
+        .navtoggle li:last-child {
+            display: none;
+          }
     }
 
     body {
@@ -253,14 +285,13 @@ X-large devices (1440px or larger)
         font-size: 24px;
         font-weight: 400;
         line-height: 1.6;
-        background-color: #ff7f50
+        background-color: #9050ff
     }
 }
 
 .header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     color: white;
     padding: 10px 20px;
 }
@@ -272,6 +303,12 @@ X-large devices (1440px or larger)
 nav ul {
     list-style: none;
     display: flex;
+}
+
+nav > ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 1em 0;
 }
 
 nav ul li {
@@ -338,6 +375,7 @@ svg {
     from {
         stroke-dashoffset: 1000;
     }
+
     to {
         stroke-dashoffset: 0;
     }
@@ -358,11 +396,45 @@ svg {
     animation-direction: alternate;
     animation-timing-function: linear;
 }
+
 @keyframes moon-move {
     0% {
         transform: translateaX(0);
     }
+
     100% {
         transform: translateX(calc(100% - 100px));
     }
+
+}
+
+.navtoggle li:not(:last-child) {
+    display: none;
+}
+
+.navtoggle,
+.navtoggle.responsive {
+    position: relative;
+}
+
+.navtoggle li .icon {
+    position: absolute;
+    right: 0;
+    top: 2px;
+    font-size: 20px;
+    padding-right: 0
+}
+
+.navtoggle.responsive li {
+    display: block;
+    padding: 10px 0;
+    border-top: 1px solid rgba(255, 127, 80, 0.5);
+}
+
+.navtoggle.responsive nav {
+    padding: 24px 0 0;
+}
+
+.navtoggle.responsive li:last-child {
+    padding: 0 0 10px;
 }
