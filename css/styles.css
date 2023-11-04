@@ -11,7 +11,6 @@ body {
 }
 
 header {
-    background-color: #ffe4c4;
     padding: 10px;
     margin: 10px;
 }
@@ -44,25 +43,25 @@ h4 {
 }
 
 a {
-    color: #ff7f50;
+    color: #000000;
     text-decoration: none;
     /* no underlining */
 }
 
 a:hover {
-    color: #cc6540;
+    color: #000000;
     text-decoration: underline;
     /* underlining when hovering over a link */
 }
 
 a:visited {
     /* visted link */
-    color: #ff7f50;
+    color: #000000;
 }
 
 a:active {
     /* selected link */
-    color: #994c30
+    color: #000000;
 }
 
 .primary-button {
@@ -80,13 +79,15 @@ a:active {
 }
 
 img {
-    width: 100%;
+    width: 50%;
+    height: auto;
 }
 
 
 /* Layout styling */
 .container {
     padding: 0 15px;
+    text-align: center;
 }
 
 .row:after {
@@ -121,7 +122,6 @@ nav ul {
 }
 
 #hero {
-    background-color: #ffe4c4;
     padding: 20px 0;
     display: inline-block;
     width: 100%;
@@ -163,7 +163,7 @@ Medium devices (640px and larger)
 */
 @media only screen and (min-width: 640px) {
     header {
-        background-color: #ffe4c4;
+        background-color: #8E7966;
         padding: 10px 0 4px;
         margin: 10px;
     }
@@ -208,7 +208,7 @@ Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
     header {
-        background-color: #ffe4c4;
+        background-color: #447149;
         padding: 10px 0 4px;
         margin: 10px;
     }
@@ -241,7 +241,7 @@ X-large devices (1440px or larger)
 ================================= */
 @media only screen and (min-width: 1440px) {
     header {
-        background-color: #ffe4c4;
+        background-color: #AAA48E;
         padding: 10px 0 4px;
         margin: 10px;
     }
@@ -390,7 +390,6 @@ svg {
 .navtoggle.responsive li {
     display: block;
     padding: 10px 0;
-    border-top: 1px solid rgba(255, 127, 80, 0.5);
 }
 
 .navtoggle.responsive nav {
