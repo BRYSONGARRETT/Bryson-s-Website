@@ -81,8 +81,12 @@ a:active {
 
 img {
     width: 100%;
+    height: auto;
 }
 
+.portrait-me {
+    width: 50%;
+}
 
 /* Layout styling */
 .container {
@@ -104,6 +108,8 @@ img {
     text-align: center;
     /* Centers text */
 }
+
+
 
 * {
     box-sizing: border-box;
@@ -164,6 +170,7 @@ Medium devices (640px and larger)
 @media only screen and (min-width: 640px) {
     header {
         background-color: #ffe4c4;
+        background-color: #dfd6bf;
         padding: 10px 0 4px;
         margin: 10px;
     }
@@ -189,11 +196,13 @@ Medium devices (640px and larger)
         font-size: 20px;
         font-weight: 400;
         line-height: 1.6;
-        background-color: #8E7966;
+        background-color: #dfd6bf;
+        padding-top: 50px;
     }
 
     .col-md-6 {
-        width: 50%;
+        width: 70%;
+        text-align: center;
     }
 
     [class*="col-"] {
@@ -209,6 +218,7 @@ Large devices (1024px or larger)
 @media only screen and (min-width: 1024px) {
     header {
         background-color: #ffe4c4;
+        background-color: #dfd6bf;
         padding: 10px 0 4px;
         margin: 10px;
     }
@@ -218,7 +228,7 @@ Large devices (1024px or larger)
         font-size: 22px;
         font-weight: 400;
         line-height: 1.6;
-        background-color: #447149;
+        background-color: #dfd6bf;
 
     }
 
@@ -242,6 +252,7 @@ X-large devices (1440px or larger)
 @media only screen and (min-width: 1440px) {
     header {
         background-color: #ffe4c4;
+        background-color: #dfd6bf;
         padding: 10px 0 4px;
         margin: 10px;
     }
@@ -251,7 +262,7 @@ X-large devices (1440px or larger)
         font-size: 24px;
         font-weight: 400;
         line-height: 1.6;
-        background-color: #AAA48E;
+        background-color: #dfd6bf;
     }
 }
 
@@ -283,7 +294,7 @@ nav ul li {
 }
 
 #hero span {
-    display: block;
+    display: blockd;
 }
 
 .row::after {
