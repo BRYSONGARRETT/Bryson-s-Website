@@ -214,7 +214,7 @@ Medium devices (640px and larger)
 
     .col-md-6 {
         width: 70%;
-        text-align: center;
+        text-align: left;
     }
 
     [class*="col-"] {
@@ -288,12 +288,14 @@ X-large devices (1440px or larger)
 nav ul {
     list-style: none;
     display: flex;
+    /* text-align: left; */
 }
 
 nav>ul {
     list-style-type: none;
     padding: 0;
     margin: 1em 0;
+    text-align: left;
 }
 
 nav ul li {
@@ -410,7 +412,7 @@ svg {
 .navtoggle.responsive li {
     display: block;
     padding: 10px 0;
-    border-top: 1px solid rgba(255, 126, 79, 0.5);
+    /* border-top: 1px solid rgba(255, 126, 79, 0.5); */
 }
 
 .navtoggle.responsive nav {
