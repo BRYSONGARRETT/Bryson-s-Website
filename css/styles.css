@@ -89,6 +89,7 @@ img {
 
 /* Layout styling */
 .container {
+    float: center;
     padding: 0 15px;
 }
 
@@ -108,7 +109,11 @@ img {
     /* Centers text */
 }
 
-
+.row {
+    display: flex;
+    justify-content: center; /* Horizontally center the items */
+    align-items: center; /* Vertically center the items */
+  }
 
 * {
     box-sizing: border-box;
@@ -151,6 +156,16 @@ main {
     padding: 20px 0;
     display: inline-block;
     width: 100%
+}
+
+footer {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #logo {
@@ -201,7 +216,7 @@ Medium devices (640px and larger)
     }
 
     [class*="col-"] {
-        float: left;
+        float: center;
         padding: 10px;
     }
 }
