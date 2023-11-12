@@ -11,7 +11,6 @@ body {
 }
 
 header {
-    background-color: #F2EEE2;
     padding: 10px;
     margin: 10px;
 }
@@ -44,25 +43,25 @@ h4 {
 }
 
 a {
-    color: #ff7f50;
+    color: #000000;
     text-decoration: none;
     /* no underlining */
 }
 
 a:hover {
-    color: #cc6540;
+    color: #000000;
     text-decoration: underline;
     /* underlining when hovering over a link */
 }
 
 a:visited {
     /* visted link */
-    color: #ff7f50;
+    color: #000000;
 }
 
 a:active {
     /* selected link */
-    color: #994c30
+    color: #000000;
 }
 
 .primary-button {
@@ -127,7 +126,6 @@ nav ul {
 }
 
 #hero {
-    background-color: #F2EEE2;
     padding: 20px 0;
     display: inline-block;
     width: 100%;
@@ -135,7 +133,6 @@ nav ul {
 }
 
 #hero h1 {
-    background-color: #F2EEE2
     padding: 20px 0;
     text-align: center;
     background: #F8F8F8;
@@ -169,7 +166,6 @@ Medium devices (640px and larger)
 */
 @media only screen and (min-width: 640px) {
     header {
-        background-color: #ffe4c4;
         padding: 10px 0 4px;
         margin: 10px;
     }
@@ -216,7 +212,6 @@ Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
     header {
-        background-color: #F2EEE2;
         padding: 10px 0 4px;
         margin: 10px;
     }
@@ -249,7 +244,6 @@ X-large devices (1440px or larger)
 ================================= */
 @media only screen and (min-width: 1440px) {
     header {
-        background-color: #ffe4c4;
         padding: 10px 0 4px;
         margin: 10px;
     }
@@ -288,6 +282,7 @@ nav>ul {
 nav ul li {
     margin: 0 15px;
     display: inline-block;
+    color:#000000;
 }
 
 #hero span {
@@ -398,7 +393,7 @@ svg {
 .navtoggle.responsive li {
     display: block;
     padding: 10px 0;
-    border-top: 1px solid rgba(255, 127, 80, 0.5);
+    border-top: 1px solid rgba(255, 126, 79, 0.5);
 }
 
 .navtoggle.responsive nav {
