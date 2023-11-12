@@ -85,6 +85,8 @@ img {
 
 .portrait-me {
     width: 50%;
+    display: block;
+    margin: auto;
 }
 
 /* Layout styling */
