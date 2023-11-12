@@ -11,7 +11,7 @@ body {
 }
 
 header {
-    background-color: #ffe4c4;
+    background-color: #F2EEE2;
     padding: 10px;
     margin: 10px;
 }
@@ -127,7 +127,7 @@ nav ul {
 }
 
 #hero {
-    background-color: #ffe4c4;
+    background-color: #F2EEE2;
     padding: 20px 0;
     display: inline-block;
     width: 100%;
@@ -135,7 +135,7 @@ nav ul {
 }
 
 #hero h1 {
-    background-color: #ffe4c4;
+    background-color: #F2EEE2
     padding: 20px 0;
     text-align: center;
     background: #F8F8F8;
@@ -170,7 +170,6 @@ Medium devices (640px and larger)
 @media only screen and (min-width: 640px) {
     header {
         background-color: #ffe4c4;
-        background-color: #dfd6bf;
         padding: 10px 0 4px;
         margin: 10px;
     }
@@ -217,8 +216,7 @@ Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
     header {
-        background-color: #ffe4c4;
-        background-color: #dfd6bf;
+        background-color: #F2EEE2;
         padding: 10px 0 4px;
         margin: 10px;
     }
@@ -252,7 +250,6 @@ X-large devices (1440px or larger)
 @media only screen and (min-width: 1440px) {
     header {
         background-color: #ffe4c4;
-        background-color: #dfd6bf;
         padding: 10px 0 4px;
         margin: 10px;
     }
