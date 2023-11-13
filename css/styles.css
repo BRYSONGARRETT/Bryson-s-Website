@@ -83,9 +83,15 @@ img {
     height: auto;
 }
 
+.portrait-me {
+    width: 50%;
+    display: block;
+    margin: auto;
+}
 
 /* Layout styling */
 .container {
+    float: center;
     padding: 0 15px;
     text-align: center;
 }
@@ -94,6 +100,29 @@ img {
     content: "";
     clear: both;
     display: table;
+}
+
+.navtoggle {
+    float:left;
+}
+
+.button-container {
+    display: inline-block; /* or use "block" if you want it to be a block-level element */
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px; /* Adjust the padding to your liking */
+    text-decoration: none;
+    background-color: #ff9e43; /* Button background color */
+    color: #fff; /* Button text color */
+    border-radius: 5px; /* Rounded corners */
+    border: none; /* Remove button border */
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #ff9e43; /* Change color on hover */
 }
 
 #work.row {
@@ -106,19 +135,27 @@ img {
     /* Centers text */
 }
 
+.row {
+    display: flex;
+    justify-content: center; /* Horizontally center the items */
+    align-items: top; /* Vertically center the items */
+  }
+
 * {
     box-sizing: border-box;
 }
 
 nav {
-    display: inline-block;
-    width: 100%;
+    width: auto;
+    float: right;
+    margin-top: 4px;
 }
 
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 10px;
+    text-align: left;
 }
 
 #hero {
@@ -129,7 +166,6 @@ nav ul {
 }
 
 #hero h1 {
-    background-color: #ffe4c4;
     padding: 20px 0;
     text-align: center;
     background: #F8F8F8;
@@ -150,8 +186,24 @@ main {
     width: 100%
 }
 
+footer {
+    text-align: center;
+}
+
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 #logo {
-    width: 100px;
+    /* width: 100px;
+    float: right; */
+    max-width: 250px;
+    display: inline-block;
+
 }
 .navtoggle li:not(:last-child) {
     display: none;
@@ -165,6 +217,7 @@ Medium devices (640px and larger)
     header {
         padding: 20px 0 13px;
         margin: 10px;
+        text-align: unset;
     }
 
     nav>ul>li {
@@ -183,20 +236,33 @@ Medium devices (640px and larger)
         margin: 1em 0;
     }
 
+    #logo {
+        float: left;
+    }
+    nav {
+        width: auto;
+        float: right;
+        margin-top: 0px;
+    }
+
     body {
         color: #000000;
         font-size: 20px;
         font-weight: 400;
         line-height: 1.6;
-        background-color: #8E7966;
+        background-color: #dfd6bf;
+        padding-top: 50px;
     }
 
     .col-md-6 {
-        width: 50%;
+        width: 70%;
+        display: inline-block;
+        flex: 1;
+
     }
 
     [class*="col-"] {
-        float: left;
+        float: center;
         padding: 10px;
     }
 }
@@ -209,6 +275,7 @@ Large devices (1024px or larger)
     header {
         padding: 20px 0 13px;
         margin: 10px;
+        text-align: unset;
     }
 
     body {
@@ -216,7 +283,7 @@ Large devices (1024px or larger)
         font-size: 22px;
         font-weight: 400;
         line-height: 1.6;
-        background-color: #447149;
+        background-color: #dfd6bf;
 
     }
 
@@ -241,6 +308,7 @@ X-large devices (1440px or larger)
     header {
         padding: 20px 0 13px;
         margin: 10px;
+        text-align: unset;
     }
 
     body {
@@ -248,7 +316,7 @@ X-large devices (1440px or larger)
         font-size: 24px;
         font-weight: 400;
         line-height: 1.6;
-        background-color: #AAA48E;
+        background-color: #dfd6bf;
     }
 }
 
@@ -266,6 +334,7 @@ X-large devices (1440px or larger)
 nav ul {
     list-style: none;
     display: flex;
+    /* text-align: left; */
 }
 
 nav>ul {
@@ -277,10 +346,11 @@ nav>ul {
 nav ul li {
     margin: 0 15px;
     display: inline-block;
+    color:#000000;
 }
 
 #hero span {
-    display: block;
+    display: blockd;
 }
 
 .row::after {
