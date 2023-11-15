@@ -45,6 +45,7 @@ h4 {
 a {
     color: #000000;
     text-decoration: none;
+    position: relative;
     /* no underlining */
 }
 
@@ -115,10 +116,12 @@ img {
     padding: 10px 20px; /* Adjust the padding to your liking */
     text-decoration: none;
     background-color: #ff9e43; /* Button background color */
-    color: #fff; /* Button text color */
+    color: #000000; /* Button text color */
     border-radius: 5px; /* Rounded corners */
     border: none; /* Remove button border */
     cursor: pointer;
+    font-size: 20px;
+    font-weight: 400
 }
 
 .button:hover {
@@ -136,7 +139,7 @@ img {
 }
 
 .row {
-    display: flex;
+    /* display: flex; */
     justify-content: center; /* Horizontally center the items */
     align-items: top; /* Vertically center the items */
   }
@@ -255,14 +258,14 @@ Medium devices (640px and larger)
     }
 
     .col-md-6 {
-        width: 70%;
+        width: 50%;
         display: inline-block;
         flex: 1;
 
     }
 
     [class*="col-"] {
-        float: center;
+        float: left;
         padding: 10px;
     }
 }
@@ -366,7 +369,7 @@ nav ul li {
 button {
     display: inline-block;
     background-color: #ff7f50;
-    color: white;
+    color: black;
     font-size: 16px;
     margin: 10px 2px;
     cursor: pointer;
@@ -438,16 +441,19 @@ svg {
     100% {
         transform: translateX(calc(100% - 100px));
     }
+}
 
+.navtoggle li {
+    position: relative;
 }
 
 .navtoggle,
 .navtoggle.responsive {
-    position: relative;
+    position: absolute;
 }
 
 .navtoggle li .icon {
-    position: absolute;
+    position:absolute;
     right: 0;
     top: 2px;
     font-size: 20px;
@@ -456,7 +462,7 @@ svg {
 
 .navtoggle.responsive li {
     display: block;
-    padding: 10px 0;
+    /* padding: 10px 0; */
     /* border-top: 1px solid rgba(255, 126, 79, 0.5); */
 }
 
