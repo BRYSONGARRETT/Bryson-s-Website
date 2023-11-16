@@ -12,13 +12,6 @@ body {
     font-family: 'Arial', sans-serif;
 }
 
-header {
-    /* padding: 10px; */
-    margin: 10px;
-    color: #fff;
-    padding: 10px 0;
-}
-
 h1,
 h2,
 h3,
@@ -103,17 +96,48 @@ img {
     padding: 20px;
 }
 
-.row:after {
-    content: "";
-    clear: both;
-    display: table;
+header {
+    /* padding: 10px; */
+    margin: 10px;
+    color: #fff;
+    padding: 10px 0;
 }
 
 .navtoggle {
-    /* float:left; */
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.nav {
+    display: flex;
+    align-items: center; /* Center items horizontally */
+}
+
+.nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav li {
+    margin-right: 20px;
+}
+
+.icon {
+    cursor: pointer;
+    display: none;
+    color: #000000;
+    font-size: 1.5em;
+}
+
+
+.row {
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
 }
 
 .button-container {
@@ -148,21 +172,9 @@ img {
     /* Centers text */
 }
 
-.row {
-    /* display: flex; */
-    justify-content: center; /* Horizontally center the items */
-    align-items: top; /* Vertically center the items */
-  }
-
 * {
     box-sizing: border-box;
 }
-
-/* nav {
-    width: auto;
-    float: right;
-    margin-top: 4px;
-} */
 
 #hero {
     padding: 20px 0;
@@ -196,76 +208,35 @@ footer {
     text-align: center;
 }
 
-#logo {
-    /* width: 100px;
-    float: right; */
-    max-width: 250px;
-    display: inline-block;
-
+.col-lg-7{
+    width: 60%;
+    padding: 10px;
 }
-/* .navtoggle li:not(:last-child) {
-    display: none;
-} */
+
+.col-lg-5 {
+    width: 40%;
+    padding: 10px;
+}
+
+.col-md-6 {
+    width: 50%;
+}
 
 /* ==============================
 Medium devices (640px and larger)
 ================================= 
 */
-@media only screen and (min-width: 640px) {
-    header {
-        padding: 20px 0 13px;
-        margin: 10px;
-        text-align: unset;
+@media screen and (max-width: 640px) {
+
+    .col-lg-7,
+    .col-md-6,
+    .col-lg-5 {
+        width: 100%; /* Take full width on smaller screens for stacked layout */
     }
-
-    /* nav>ul>li {
-        display: inline-block;
-    }
-
-    .navtoggle li:not(:last-child) {
-        display: inline-block;
-    }
-
-    .navtoggle li:last-child {
-        display: none;
-    }
-
-    nav>ul {
-        margin: 1em 0;
-    } */
-
-    #logo {
-        float: left;
-    }
-    /* nav {
-        width: auto;
-        float: right;
-        margin-top: 0px;
-    } */
-
-    /* body {
-        color: #000000;
-        font-size: 20px;
-        font-weight: 400;
-        line-height: 1.6;
-        background-color: #dfd6bf;
-        padding-top: 50px;
-    } */
-
-    .col-md-6 {
-        width: 50%;
-        display: inline-block;
-        flex: 1;
-
-    }
-
-    [class*="col-"] {
-        float: left;
-        padding: 10px;
-    }
-
-    .icon {
-        display: block;
+    
+    .navtoggle {
+        flex-direction: row;
+        position: relative; /* Ensure relative positioning within the container */
     }
 
     .nav {
@@ -279,13 +250,12 @@ Medium devices (640px and larger)
         z-index: 1; /* Ensure the menu is above other content */
     }
 
-    .navtoggle {
-        flex-direction: row;
-        position: relative; /* Ensure relative positioning within the container */
-    }
-
     .nav.active {
         display: flex;
+    }
+
+    .icon {
+        display: block;
     }
 
     .nav ul {
@@ -297,13 +267,7 @@ Medium devices (640px and larger)
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
-@media only screen and (min-width: 1024px) {
-    header {
-        padding: 20px 0 13px;
-        margin: 10px;
-        text-align: unset;
-    }
-
+@media screen and (max-width: 1024px) {
     body {
         color: #000000;
         font-size: 22px;
@@ -312,31 +276,12 @@ Large devices (1024px or larger)
         background-color: #dfd6bf;
 
     }
-
-    .col-lg-7 {
-        width: 60%;
-    }
-
-    .col-lg-5 {
-        width: 40%;
-    }
-
-    .container {
-        max-width: 1200px;
-        margin: 0 auto;
-    }
 }
 
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
-@media only screen and (min-width: 1440px) {
-    header {
-        padding: 20px 0 13px;
-        margin: 10px;
-        text-align: unset;
-    }
-
+@media screen and (max-width: 1440px) {
     body {
         color: #000000;
         font-size: 24px;
@@ -346,43 +291,8 @@ X-large devices (1440px or larger)
     }
 }
 
-.header {
-    display: flex;
-    justify-content: space-between;
-    color: white;
-    padding: 10px 20px;
-}
-
-.logo {
-    font-size: 24px;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    /* text-align: left; */
-}
-
-/* nav>ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 1em 0;
-} */
-
-/* nav ul li {
-    margin: 0 15px;
-    display: inline-block;
-    color:#000000;
-} */
-
 #hero span {
     display: blockd;
-}
-
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
 }
 
 #about-page h3 {
@@ -464,60 +374,4 @@ svg {
     100% {
         transform: translateX(calc(100% - 100px));
     }
-}
-
-/* .navtoggle li {
-    position: relative;
-} */
-
-/* .navtoggle,
-.navtoggle.responsive {
-    position: relative;
-} */
-
-/* .navtoggle li .icon {
-    position:absolute;
-    right: 0;
-    top: 2px;
-    font-size: 20px;
-    padding-right: 0; 
-}
-
-.navtoggle.responsive li {
-    display: block; */
-    /* padding: 10px 0;
-    /* border-top: 1px solid rgba(255, 126, 79, 0.5); */
-
-/* .navtoggle.responsive nav {
-    padding: 24px 0 0; */
-
-/* .navtoggle.responsive li:last-child {
-    padding: 0 0 10px;
-} */
-
-/* #myNavtoggle {
-    position: relative;
-} */
-/* } */
-.nav {
-    display: flex;
-    align-items: center; /* Center items horizontally */
-}
-
-/* .nav.active {
-    display: block;
-} */
-
-.icon {
-    cursor: pointer;
-    display: none;
-    color: #000000;
-    font-size: 1.5em;
-}
-
-.nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
 }
