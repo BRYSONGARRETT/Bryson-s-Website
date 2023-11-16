@@ -158,18 +158,11 @@ img {
     box-sizing: border-box;
 }
 
-nav {
+/* nav {
     width: auto;
     float: right;
     margin-top: 4px;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 10px;
-    text-align: left;
-}
+} */
 
 #hero {
     padding: 20px 0;
@@ -203,14 +196,6 @@ footer {
     text-align: center;
 }
 
-
-
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 #logo {
     /* width: 100px;
     float: right; */
@@ -218,9 +203,9 @@ footer {
     display: inline-block;
 
 }
-.navtoggle li:not(:last-child) {
+/* .navtoggle li:not(:last-child) {
     display: none;
-}
+} */
 
 /* ==============================
 Medium devices (640px and larger)
@@ -378,17 +363,17 @@ nav ul {
     /* text-align: left; */
 }
 
-nav>ul {
+/* nav>ul {
     list-style-type: none;
     padding: 0;
     margin: 1em 0;
-}
+} */
 
-nav ul li {
+/* nav ul li {
     margin: 0 15px;
     display: inline-block;
     color:#000000;
-}
+} */
 
 #hero span {
     display: blockd;
@@ -490,7 +475,7 @@ svg {
     position: relative;
 } */
 
-.navtoggle li .icon {
+/* .navtoggle li .icon {
     position:absolute;
     right: 0;
     top: 2px;
@@ -499,7 +484,7 @@ svg {
 }
 
 .navtoggle.responsive li {
-    display: block;
+    display: block; */
     /* padding: 10px 0;
     /* border-top: 1px solid rgba(255, 126, 79, 0.5); */
 
@@ -513,7 +498,7 @@ svg {
 /* #myNavtoggle {
     position: relative;
 } */
-}
+/* } */
 .nav {
     display: flex;
     align-items: center; /* Center items horizontally */
@@ -526,7 +511,7 @@ svg {
 .icon {
     cursor: pointer;
     display: none;
-    color: #fff;
+    color: #000000;
     font-size: 1.5em;
 }
 
